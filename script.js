@@ -6,6 +6,7 @@ function caesarCipher(string, shift) {
   }
   
   function translate() {
-      let plaintextValue = document.getElementById("plaintext").value;
-      let shiftValue = document.getElementById("shift").value;
-  }
+    const plaintextValue = document.getElementById('plaintext').value;
+    const shiftValue = parseInt(document.getElementById('shift').value);
+    const outputValue = caesarCipher(plaintextValue, shiftValue);
+}
